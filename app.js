@@ -62,12 +62,12 @@ function generateResultsScreenHTML(){
 
 function generateQuizQuestionHTML(){
   return `
-  <div class="quiz-question">
-    <p>${store.questions[store.questionNumber].question}
-    </p>
-  </div>
+  
   <form id="question-form" class="question-form">
     <fieldset>
+      <div class="quiz-question">
+        <p>${store.questions[store.questionNumber].question}</p>
+      </div>
       <div class="quiz-answers">
         ${generateQuizAnswerHTML()}
       </div>
@@ -75,7 +75,7 @@ function generateQuizQuestionHTML(){
       <button type="button" id="next-question" tabindex="6">Next</button>
     </fieldset>
   </form>
-  ; `
+  `;
 };
 
 function generateQuizAnswerHTML(){
