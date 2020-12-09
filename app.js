@@ -87,7 +87,7 @@ function generateQuizAnswerHTML(){
     answerHtml += `
     <div id="answer-container-${i}">
     <input type="radio" name="answers" id="answers${i + 1}" value= "${answer}" tabindex ="${i + 1}" required> 
-    <label for="option${i + 1}">${answer}</label>
+    <label for="answers${i + 1}">${answer}</label>
   </div>`;
     i++;
   });
