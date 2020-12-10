@@ -128,9 +128,6 @@ function renderQuiz(){
   } else {
     $('main').html(generateResultsScreenHTML())
   }
-
-
-  console.log('renderQuiz ran');
 };
 
 
@@ -153,7 +150,6 @@ function handleNextQuestion(){
     store.questionNumber+= 1;
     renderQuiz();
   });
-  console.log('handleNextQuestion ran');
 };
 
 function handleGradeQuestion(){
@@ -183,7 +179,6 @@ function handleGradeQuestion(){
     $('#next-question').show();
 
   });
-   console.log('handleGradeQuestion ran');
 };
 function restart() {
   store.quizStarted = false;
@@ -195,7 +190,6 @@ function handleRestartQuiz(){
     restart();
     renderQuiz();
   });
-  console.log('handleRestartQuiz ran');
 };
 
 function handleBareBonesQuiz() {
@@ -204,8 +198,6 @@ function handleBareBonesQuiz() {
  handleNextQuestion();
  handleGradeQuestion();
  handleRestartQuiz();
- console.log('handleBareBonesQuiz ran');
-
 };
 
 $(handleBareBonesQuiz);
