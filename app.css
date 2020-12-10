@@ -60,7 +60,7 @@ main {
 body {
   background-image: url("images/old\ book\ pages.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   height: 100vw;
   max-width: 500px;
   margin-left: auto;
